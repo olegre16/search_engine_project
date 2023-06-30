@@ -22,7 +22,6 @@ public class Parse extends RecursiveAction {
             if (!linkSite.contains(l)) {
                 linkSite.add(l);
                 mapLinks.addSiteMap(new MapLinks(l));
-                System.out.println(l);
             }
         }
         List<Parse> taskList = new ArrayList<>();
