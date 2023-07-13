@@ -15,7 +15,7 @@ public class IndexController {
     public IndexController(IndexService indexService) {
         this.indexService = indexService;
     }
-    @GetMapping("/indexing")
+    @GetMapping("/startIndexing")
     public ResponseEntity<StatisticsResponse> startIndexing() {
         return ResponseEntity.ok(statisticsService.getStatistics());
     }
